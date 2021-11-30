@@ -1,0 +1,116 @@
+"""
+Iterative statements:
+If we want to execute a group of statements multiple times
+then we should go for iterative statements
+1. for
+2. while
+
+1. for: for every element when we want to perform some action
+present in a sequence or its a part of an iterable
+
+for variable in sequence:
+    statement
+
+----------------------------------------------------------
+ls = [22,4,5,10,20,6,77,99,100]
+# i want to fetch only even numbers from the sequence
+for i in ls:
+    #print(i)
+    if i%2==0:
+        print(i,'is even number')
+
+    else:
+        print(i,'is odd number')
+--------------------------------------------
+
+num = int(input('Enter the number'))
+if num<=5:
+    for i in range(num):
+        print('Python')
+else:
+    print('Your number should between the range 1-5')
+
+# test the mobile number
+mob =  input('Enter the mobile number:')
+if len(mob)==10:
+    print('Your number is:',mob)
+    # find out the particular number
+    num = input('Enter the number you ant to find:')
+
+    if (num in mob)==True:
+        print('Found the number:',num)
+    else:
+        print(num,'is not present')
+    --------------------------------
+    if (mob.find(num))!=-1 :
+        print('Found the number:', num)
+    else:
+        print(num, 'is not present')
+    ------------------------------
+    if (mob.count(num)) !=0 :
+        print('Found the number:', num)
+    else:
+        print(num, 'is not present')
+
+
+else:
+    print('Plz enter 10 digit number')
+"""
+"""
+2. while loop:
+whenever we want to execute a group of statements iteratively until
+some conditions false
+
+while loop is intenstionally infinite loop
+
+syntax:
+    while condition:
+        statement
+-------------------------------------
+num = 2
+while num<10:
+    print(num+10,end=' ')
+    # num = 2==> 2<10 ==> 2+10
+    # num=3 ==> 3<10 ==> 3+10
+    # num=10==> 10<10(False)
+    num+=1
+--------------------------------------------
+
+
+# WAP to perform the addition of numbers from the list
+ls = eval(input('Enter the list:'))
+#print(type(ls))
+#[1,2,3]
+sum = 0
+for i in ls:
+    sum = sum+i
+print('Final sum is:',sum)
+
+print(sum(ls))
+##################################
+"""
+#while loop
+#ls = [10,20,30]
+ls = eval(input('Enter the list:'))
+sum = 0
+i = 0
+while i<len(ls):#3
+
+    sum=sum+ls[i]
+    i+=1
+
+print('Final sum is:', sum)
+
+
+
+
+
+
+
+
+
+
+
+
+
+

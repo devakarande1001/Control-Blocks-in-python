@@ -1,0 +1,139 @@
+"""
+Multi line comment
+print('hi')
+a = 20
+print('Next state')
+1. Selective or conditional statements
+if <condition>:
+    when condition is True tjen ur control will go inside the if
+    else it wont
+
+Ex.
+if 2 ==  2:
+    print('Its True')
+print('Out of the if')
+"""
+"""
+# when condition is True it will execute if block
+# & when condition is False then it will go to else
+lang = 'Java'
+if lang == 'Python':
+    print('Do Data science')
+else:#optional-- it doesnot require condtion
+    print('Testing using Java')
+------------------------------------------------------
+#Test Multiple conditions on single input
+per = 40
+if per>75:
+    print('You got Distinction')
+elif per>65:
+    print('You got First class')
+elif per>55:
+    print('You got Second class')
+elif per>45:
+    print('You got pass class')
+else:
+    print('You are Fail...')
+--------------------------------------------------
+# when we want to test only 3 conditions
+gender = 'feMalE'
+#if gender=='Male' or  gender=='male':
+gen = gender.casefold()
+if gen=='male':
+    print('Your gender is Male')
+elif gen=='female':
+    print('Your gender is Female')
+else:
+    print('Your gender is Other')
+----------------------------------------------------
+amount = 5000
+location='Dont know'
+if amount>1000:
+    if location=='FC':
+        print('Welcome to BBQ at FC')
+
+    else:
+        print('Welcome to BBQ at Hinjewadi')
+
+else:
+    print('Go to the any nearby hotel')
+----------------------------------------------------------
+# when we want to use nested if we have to test
+#multiple inputs those sre dependent on each other
+
+#result = 'pass'
+#grade = 78
+result=input('Enter the result:')# default input is always a str
+if result=='pass':
+    grade = float(input('Enter the Grade:'))
+    if grade>85:
+        print('Distinction')
+    elif grade>75:
+        print('First class')
+    else:
+        print('Second class')
+elif result=='fail':
+    print('You are fail')
+else:
+    print('Invalid result... Choose either pass or fail')
+-------------------------------------------------------------------
+### Iterative statements ###
+1. for loop
+iterates over the sequence(str,list,tuple,set,dict)
+Syntax: 
+        for var in sequence:
+            statements
+            
+        for value in [10,20,30]:
+                print(value)
+        it fetch one value at a time from iterable
+        and it goes upto end of the iterable
+        # loop gets executed upto len(iterable)
+2. while loop
+
+----------------------------
+# for loop for different iterables
+# str
+s = 'python'
+print(len(s))
+for i in s:
+    print(i)
+----------------------------------------------------
+#list tuple set
+# always remember the properties of individual data structure
+ls= {10,20,30,40,50,10,10,30,20}
+print(ls)
+for i in ls:
+    print(i)
+#here it wont preserve the sequence order and duplicatdes are not allowed
+#bcz its set
+----------------------------------------
+#dict
+d = {1:100,2:200,3:300,4:400}
+for i in d:# default it returns keys only
+    print(i)
+for i in d:
+    print(d[i])
+--------------------------
+
+d = {1:100,2:200,3:300,4:400}
+for i in d.values():
+    print(i)
+for i in d.items():
+    print(i)
+
+for key,value in d.items():
+    print('Key:',key,'Value:',value)
+----------------------------------------
+"""
+
+
+
+
+
+
+
+
+
+
+

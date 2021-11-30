@@ -1,0 +1,94 @@
+"""
+Transfer statements:
+break
+continue
+pass
+
+1. break:
+it breaks the execution of loop
+----------------------------
+for i in range(4):
+    if i==2:
+        print('skipped',i)
+        break
+    else:
+        print(i)
+-------------------------------------------
+for i  in range(10):#0-9
+    if i==6:
+        #print('Printing is enough and stop the iteration')
+        break
+
+    print(i)
+-------------------------------------------------
+#2. continue:
+    it skips current iteration and continue next iteration
+
+
+#skip only those items whose price is less than 500
+items = [200,399,499,599,399,599,1000,3000]
+for price in items:
+    if price<500:
+        print('We can not process item with price:',price)
+        continue
+    print('Process the item with price:',price)
+
+
+# when we repeat the code for every item in a sequence then go with for loop
+# when we repeat code as long as condition is true then go with while loop
+# in while loop we need explicite iterator to stop execution
+# but in case of for we dont need iterator variable
+-------------------------------------------------------
+3. pass:
+is a keyword in python
+When we require a functional block which wont do anything then
+go with pass statement
+--------------------------------------------------------
+if True:# functional block we cant keep empty
+    #comment
+    pass
+#meaning of pass: null statement, wont do anything, its a empty statemnt
+
+for i in range(4):
+    pass
+
+
+class HealthCare:
+    def doctors(self):
+        pass
+    def staff(self):
+        pass
+    def patient(self):
+        pass
+
+class Medical:
+    pass
+class ICU:
+    pass
+class Department:
+    pass
+class Account:
+    pass
+"""
+"""
+***** (5)
+****(4)
+***(3)
+**(2)
+*(1)
+--------------------------------------
+#for i in range(5,0,-1):
+    #print('*'*i)
+
+#for i in range(1,6):
+    #print('*'*(6-i))
+
+for i in range(6):
+    print('*'*(5-i))
+"""
+#ABCD
+count=4
+for i in range(4):
+    print(chr(65+i)*count)
+    count-=1
+
